@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ritz — Оформление документов</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#"><i class="bi bi-globe-americas"></i> Ritz</a>
+      <button id="burger" class="burger" aria-label="Открыть меню"><i class="bi bi-list"></i></button>
+      <nav class="main-nav" id="nav-menu">
+        <a href="#services"><i class="bi bi-geo-alt"></i> Страны</a>
+        <a href="#about"><i class="bi bi-info-circle"></i> О нас</a>
+        <a href="#contacts"><i class="bi bi-telephone"></i> Контакты</a>
+      </nav>
+      <div class="header-contacts">
+        <a class="phone" href="tel:+79092459009"><i class="bi bi-phone"></i> +7 (909) 245-90-09</a>
+        <button id="open-callback" class="btn-outline">Заказать звонок</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <div class="container">
+        <h1><i class="bi bi-passport"></i> Оформление документов для выезда за границу</h1>
+        <p class="lead">Быстрое и надёжное оформление паспортов, справок и других документов.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn">Посмотреть страны</a>
+          <button id="open-consult" class="btn btn-secondary">Записаться на консультацию</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services container fade-in">
+      <h2><i class="bi bi-map"></i> Страны и услуги</h2>
+      <div class="cards">
+        <article class="card"><h3><i class="bi bi-flag"></i> Германия</h3><p>Паспорт, справка, военный билет</p><div class="price">40 000 ₽</div></article>
+        <article class="card"><h3><i class="bi bi-flag"></i> Италия</h3><p>Паспорт, справка, военный билет</p><div class="price">45 000 ₽</div></article>
+        <article class="card"><h3><i class="bi bi-flag"></i> Кипр</h3><p>Паспорт, справка, военный билет</p><div class="price">55 000 ₽</div></article>
+        <article class="card"><h3><i class="bi bi-flag"></i> Франция</h3><p>Паспорт, справка, военный билет</p><div class="price">40 000 ₽</div></article>
+      </div>
+    </section>
+
+    <section id="contacts" class="contact container fade-in">
+      <h2><i class="bi bi-telephone"></i> Контакты</h2>
+      <p><i class="bi bi-geo-alt"></i> ул. Красноармейская, 31, офис 210, Брянск</p>
+      <p><i class="bi bi-envelope"></i> ritz@mail.ru</p>
+      <p><i class="bi bi-clock"></i> Пн–Пт: 10:00–20:00</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ritz</p>
+      <div class="social">
+        <a href="#"><i class="bi bi-telegram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
