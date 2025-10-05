@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Запись на консультацию — Ritz</title>
+  <link rel="icon" href="assets/favicon.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><img src="assets/logo-placeholder.png" alt="Ritz logo" class="logo-img"></a>
+    <button id="burger" class="burger" aria-label="Меню"><i class="bi bi-list"></i></button>
+    <nav class="main-nav" id="nav-menu" aria-label="Главная навигация">
+      <a href="index.html">Главная</a>
+      <a href="countries/germany.html">Страны</a>
+      <a href="about.html">О нас</a>
+      <a href="consult.html">Запись</a>
+      <a href="news.html">Новости</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-contacts">
+      <a class="phone" href="tel:+79092459009"><i class="bi bi-telephone"></i> +7 (909) 245-90-09</a>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="container fade-in">
+  <h1>Запись на консультацию</h1>
+  <form id="consult-form" class="consult-form" novalidate>
+    <label>ФИО<br><input type="text" name="name" required placeholder="Иван Иванов"></label><br><br>
+    <label>Телефон<br><input type="tel" name="phone" required placeholder="+7 (___) ___-__-__"></label><br><br>
+    <label>Email (опционально)<br><input type="email" name="email" placeholder="you@example.com"></label><br><br>
+    <label>Комментарий<br><textarea name="message" rows="4" placeholder="Кратко о запросе"></textarea></label><br><br>
+    <div class="form-actions"><button class="btn" type="submit">Отправить</button> <button class="btn-outline" type="reset">Очистить</button></div>
+  </form>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="left">© <span id="year">2025</span> Ritz — Оформление документов</div>
+    <div class="right social">
+      <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
