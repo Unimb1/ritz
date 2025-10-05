@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ritz — Главная</title>
+  <title>Запись на консультацию — Ritz</title>
   <link rel="icon" href="/assets/favicon.png" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -29,25 +29,18 @@
 </header>
 <main>
 
-<section class="hero hero-with-bg">
-  <div class="hero-overlay"></div>
-  <div class="container hero-inner">
-    <h1>Оформление документов для выезда за границу</h1>
-    <p class="lead">Быстро и надёжно: паспорта, справки, военные документы и сопровождение.</p>
-    <div class="hero-actions">
-      <a class="btn" href="/countries/germany.html">Посмотреть страны</a>
-      <a class="btn btn-outline" href="/consult.html">Записаться на консультацию</a>
+<section class="container">
+  <h1>Запись на консультацию</h1>
+  <form id="consult-form" class="consult-form" novalidate>
+    <label>ФИО<br><input type="text" name="name" required></label>
+    <label>Телефон<br><input type="tel" name="phone" required></label>
+    <label>Электронная почта<br><input type="email" name="email"></label>
+    <label>Комментарий<br><textarea name="message" rows="4"></textarea></label>
+    <div class="form-actions">
+      <button class="btn" type="submit">Отправить</button>
+      <button class="btn btn-outline" type="reset">Очистить</button>
     </div>
-  </div>
-</section>
-<section class="container services-preview">
-  <h2>Популярные направления</h2>
-  <div class="cards">
-    <div class="card small"><h3>Германия</h3><p>Оформление паспорта и справок.</p><a href="/countries/germany.html" class="link-more">Подробнее</a></div>
-    <div class="card small"><h3>Италия</h3><p>Консультации и подготовка документов.</p><a href="/countries/italy.html" class="link-more">Подробнее</a></div>
-    <div class="card small"><h3>Кипр</h3><p>Подготовка полного пакета документов.</p><a href="/countries/cyprus.html" class="link-more">Подробнее</a></div>
-    <div class="card small"><h3>Франция</h3><p>Сопровождение и визовая поддержка.</p><a href="/countries/france.html" class="link-more">Подробнее</a></div>
-  </div>
+  </form>
 </section>
 
 </main>
