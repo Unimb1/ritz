@@ -1,0 +1,33 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Запись — Ritz</title><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../styles.css"></head><body>
+<header class="site-header"><div class="container header-inner"><a class="logo" href="../index.html"><img src="../assets/logo-placeholder.png" class="logo-img" alt="Ritz"></a></div></header>
+
+<main class="container">
+  <h1 class="fade-up">Запись на консультацию</h1>
+  <div class="form-wrap fade-up" style="display:grid;grid-template-columns:1fr 380px;gap:22px;align-items:start;">
+    <div>
+      <form id="consult-form-full" data-formspree="" novalidate>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <label>ФИО<br><input name="name" required placeholder="Иван Иванов"></label>
+          <label>Телефон<br><input name="phone" id="phone-full" pattern="\+?\d{10,15}" required placeholder="+7XXXXXXXXXX"></label>
+        </div>
+        <label>Email<br><input name="email" type="email" placeholder="you@example.com"></label>
+        <label>Услуга<br><input name="service" placeholder="Например: Виза в Германию"></label>
+        <label>Комментарий<br><textarea name="message" rows="5" placeholder="Кратко о запросе"></textarea></label>
+        <p><button class="btn" type="submit">Отправить заявку</button></p>
+      </form>
+      <div style="margin-top:12px;color:#6b7280;font-size:14px;">
+        Подсказка: после отправки вы получите уведомление на e-mail или в личном кабинете.
+      </div>
+    </div>
+    <aside style="background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 14px 60px rgba(10,15,30,0.06)">
+      <h3>Почему с нами удобно</h3>
+      <ul>
+        <li>Персональный менеджер</li>
+        <li>Прозрачные сроки и цены</li>
+        <li>Поддержка на всех этапах</li>
+      </ul>
+      <p style="margin-top:12px"><a class="btn" href="index.html">Вернуться на главную</a></p>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer"><div class="container footer-inner">© 2025 Ritz</div></footer><script src="../script.js"></script></body></html>
